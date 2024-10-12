@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { devices } from '../../../globals';
 
+interface ProjectTypeProps {
+  $isTeamProject: boolean;
+}
+
 export const ProjectWrap = styled.li`
   width: 100%;
   overflow: hidden;
@@ -31,8 +35,12 @@ export const InfoWrap = styled.div`
   flex-direction: column;
   gap: 4px;
   padding: 8px;
-  background-color: #fff;
+  /* background-color: #fff; */
   flex-grow: 1;
+`;
+
+export const ProjectType = styled.p<ProjectTypeProps>`
+  color: ${p => (p.$isTeamProject ? 'red' : 'inherit')};
 `;
 
 export const LinksWrap = styled.div`
@@ -40,46 +48,16 @@ export const LinksWrap = styled.div`
   gap: 12px;
 `;
 
-export const CardLink = styled.a`
-  position: relative;
-  color: #b5b7c2;
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #b5b7c2;
-    border-radius: 2px;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover,
-  &:focus {
-    &::after {
-      opacity: 1;
-    }
-  }
-`;
-
-// ////////////////
 export const TechList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 `;
-////////////
-interface TechItemProps {
-  backgroundColor?: string;
-}
 
-export const TechItem = styled.li<TechItemProps>`
-  padding: 2px 8px;
+export const TechItem = styled.li`
+  padding: 2px 12px;
   border-radius: 4px;
+  border-radius: 50px;
   background-color: #b5b7c2;
   color: #ffffff;
   box-shadow: 1px 2px 2px grey;
@@ -88,7 +66,6 @@ export const TechItem = styled.li<TechItemProps>`
   transition: background-color 250ms linear;
 
   &:hover {
-    background-color: ${p =>
-      p.backgroundColor ? p.backgroundColor : '#b5b7c2'};
+    background-color: '#b5b7c2';
   }
 `;

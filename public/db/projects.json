@@ -1,18 +1,122 @@
 [
   {
+    "id": 9,
+    "name": "WebStudio",
+    "category": "html-css-js",
+    "description": "Two-page adaptive website. Interactive JavaScript: Mobile Menu, Modal Form, Projects filtering on the Portfolio page.",
+    "technologies": ["HTML", "SCSS", "JavaScript"],
+    "isTeamProject": false,
+
+    "image": "/img/projects/webstudio-main-page.png",
+    "livePageLink": "https://veronika-chenko.github.io/webstudio/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/Veronika-chenko/webstudio",
+      "backend": ""
+    }
+  },
+  {
+    "id": 10,
+    "name": "BarberShop",
+    "category": "html-css-js",
+    "description": "Adaptive landing page. Interactive JavaScript: Hero Slider, Mobile Menu, Smooth scrolling.",
+    "technologies": ["HTML", "SCSS", "JavaScript"],
+    "isTeamProject": false,
+    "image": "/img/projects/barbershop-hero-4.png",
+    "livePageLink": "https://veronika-chenko.github.io/barbershop/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/Veronika-chenko/barbershop",
+      "backend": ""
+    }
+  },
+  {
+    "id": 17,
+    "name": "Protective Face Masks",
+    "category": "html-css-js",
+    "description": "Adaptive Homepage based on the desktop Figma layout.",
+    "technologies": ["HTML", "SCSS", "JavaScript", "Gulp", "Webpack"],
+    "isTeamProject": false,
+    "image": "/img/projects/protective-masks.png",
+    "livePageLink": "https://veronika-chenko.github.io/gulp-mask-project/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/Veronika-chenko/gulp-mask-project",
+      "backend": ""
+    }
+  },
+  {
+    "id": 8,
+    "name": "Filmoteka",
+    "category": "html-css-js",
+    "description": "Project for searching and adding favorite movies to a client's personal library.",
+    "technologies": ["HTML", "SCSS", "JavaScript", "Parcel"],
+    "isTeamProject": true,
+    "image": "/img/projects/filmoteka-2.png",
+    "livePageLink": "https://byht1.github.io/filmoteka-team-project/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/byht1/filmoteka-team-project",
+      "backend": ""
+    },
+    "role": "Implemented pagination and movie collection display. Refactored header styles due to the addition of new features."
+  },
+  {
+    "id": 13,
+    "name": "Flower Shop",
+    "category": "html-css-js",
+    "description": "A multiple-page adaptive Flower Shop website.",
+    "technologies": ["HTML", "SCSS", "JavaScript", "Axios", "Parcel", "Scrum"],
+    "isTeamProject": true,
+    "image": "/img/projects/flowers-2.png",
+    "livePageLink": "https://vladaboiko.github.io/Flowers/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/VladaBoiko/Flowers",
+      "backend": ""
+    },
+    "role": "Completed the Hero Slider & Hero Modal Form, Filter, Advantages, How It Works, Instagram, Guarantee, Return, Help sections, Register/Login forms and Personal Cabinet. Implemented client authorization. Scrum Master."
+  },
+
+  {
+    "id": 11,
+    "name": "Digital Project «Home»",
+    "category": "html-css-js",
+    "description": "Adaptive webpage based on the desktop Figma layout. Interactive JavaScript: Mobile Menu, Hero Slider, Scroll Animation.",
+    "technologies": ["HTML", "SCSS", "JavaScript"],
+    "isTeamProject": false,
+    "image": "/img/projects/project-home.png",
+    "livePageLink": "https://veronika-chenko.github.io/orange-digital-project-test/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/Veronika-chenko/orange-digital-project-test",
+      "backend": ""
+    }
+  },
+  {
+    "id": 12,
+    "name": "Psycology",
+    "description": "",
+    "category": "html-css-js",
+    "technologies": ["HTML", "CSS", "SCSS", "Parcel"],
+    "isTeamProject": true,
+    "image": "/img/projects/psycology.png",
+    "livePageLink": "https://vladaboiko.github.io/Psychology/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/VladaBoiko/Psychology",
+      "backend": ""
+    },
+    "role": "Completed Seminars Page. Scrum Master."
+  },
+
+  {
     "id": 1,
     "name": "Image Finder",
     "category": "react",
-    "description": "The Image Finder App for searching images based on keywords.",
+    "description": "The Image Finder App for searching images based on keywords. Load More implemented.",
     "technologies": [
       "React",
       "React Hooks",
       "TypeScript",
-      "styled-component",
-      "axios"
+      "Styled Components",
+      "Axios"
     ],
     "isTeamProject": false,
-    "image": "/img/projects/image-finder.png",
+    "image": "/img/projects/image-finder-3.png",
     "livePageLink": "https://veronika-chenko.github.io/image-search/",
     "repositoryLinks": {
       "frontend": "https://github.com/Veronika-chenko/image-search",
@@ -24,12 +128,12 @@
     "id": 2,
     "name": "Coffee Feedback Widget",
     "category": "react",
-    "description": "Feedback Widget is an application to collect statistics.",
+    "description": "An application to collect statistics. Reset & Restore Options implemented.",
     "technologies": [
       "React",
       "TypeScript",
-      "styled-components",
-      "custom-hooks"
+      "Styled Components",
+      "Custom Hooks"
     ],
     "isTeamProject": false,
     "image": "/img/projects/feedback.png",
@@ -43,8 +147,8 @@
     "id": 3,
     "name": "User Cards",
     "category": "react",
-    "description": "This project implements user cards with an interactive Follow button. Refreshing the page retains Follow button's text and color and follower count.",
-    "technologies": ["React", "React Custom Hooks", "styled-components"],
+    "description": "This project features user cards with an interactive Follow button and dynamic follower count. The button's state and follower count are retained upon page refresh.",
+    "technologies": ["React", "React Custom Hooks", "Styled Components"],
     "isTeamProject": false,
     "image": "/img/projects/user-cards.png",
     "livePageLink": "https://veronika-chenko.github.io/user-cards-test/",
@@ -71,8 +175,8 @@
     "id": 5,
     "name": "Memory Game",
     "category": "react",
-    "description": "",
-    "technologies": ["React", "React Hooks", "styled-components"],
+    "description": "Three themes implemented: Coffee, Flowers, Music. The app fetches data from the local db folder based on the current theme.",
+    "technologies": ["React", "React Hooks", "Styled Components"],
     "isTeamProject": false,
     "image": "/img/projects/memory-coffee.png",
     "livePageLink": "https://veronika-chenko.github.io/memory-game-react-app/",
@@ -86,7 +190,7 @@
     "name": "Random Quote Generator",
     "category": "react",
     "description": "The Random Quote Generator provides a random quote on request.",
-    "technologies": ["React", "styled-components", "axios"],
+    "technologies": ["React", "Styled Components", "Axios"],
     "isTeamProject": false,
     "image": "/img/projects/random-quote-generator.png",
     "livePageLink": "https://veronika-chenko.github.io/random-quote-generator/",
@@ -110,94 +214,7 @@
     },
     "role": "Completed Products Section. Scrum Master."
   },
-  {
-    "id": 8,
-    "name": "Filmoteka",
-    "category": "html-css-js",
-    "description": "Project for searching and adding favorite movies to a client's personal library.",
-    "technologies": ["HTML", "SCSS", "JavaScript", "Parcel"],
-    "isTeamProject": true,
-    "image": "/img/projects/filmoteka-2.png",
-    "livePageLink": "https://byht1.github.io/filmoteka-team-project/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/byht1/filmoteka-team-project",
-      "backend": ""
-    },
-    "role": "Implemented pagination and movie collection display. Refactored header styles due to the addition of new features."
-  },
-  {
-    "id": 9,
-    "name": "WebStudio",
-    "category": "html-css-js",
-    "description": "Two-page adaptive website. Interactive JavaScript: Mobile Menu, Modal Form, Projects filtering on the Portfolio page.",
-    "technologies": ["HTML", "SCSS", "JavaScript"],
-    "isTeamProject": false,
 
-    "image": "/img/projects/webstudio-main-page.png",
-    "livePageLink": "https://veronika-chenko.github.io/webstudio/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/Veronika-chenko/webstudio",
-      "backend": ""
-    }
-  },
-  {
-    "id": 10,
-    "name": "Barbershop",
-    "category": "html-css-js",
-    "description": "Adaptive landing page. Interactive JavaScript: Hero Slider, Mobile Menu, Smooth scrolling.",
-    "technologies": ["HTML", "SCSS", "JavaScript", "Swiper Slider"],
-    "isTeamProject": false,
-    "image": "/img/projects/barbershop-hero-3.png",
-    "livePageLink": "https://veronika-chenko.github.io/barbershop/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/Veronika-chenko/barbershop",
-      "backend": ""
-    }
-  },
-  {
-    "id": 11,
-    "name": "Digital Project 'Home'",
-    "category": "html-css-js",
-    "description": "Adaptive webpage based on the desktop Figma layout.",
-    "technologies": ["HTML", "SCSS", "JavaScript"],
-    "isTeamProject": false,
-    "image": "/img/projects/project-home.png",
-    "livePageLink": "https://veronika-chenko.github.io/orange-digital-project-test/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/Veronika-chenko/orange-digital-project-test",
-      "backend": ""
-    }
-  },
-  {
-    "id": 12,
-    "name": "Psycology",
-    "description": "",
-    "category": "html-css-js",
-    "technologies": ["HTML", "CSS", "SCSS", "Parcel"],
-    "isTeamProject": true,
-    "image": "/img/projects/psycology.png",
-    "livePageLink": "https://vladaboiko.github.io/Psychology/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/VladaBoiko/Psychology",
-      "backend": ""
-    },
-    "role": "Completed Seminars Page. Scrum Master."
-  },
-  {
-    "id": 13,
-    "name": "Flower Shop",
-    "category": "html-css-js",
-    "description": "A multiple-page adaptive Flower Shop website.",
-    "technologies": ["HTML", "SCSS", "JavaScript", "axios", "Parcel", "Scrum"],
-    "isTeamProject": true,
-    "image": "/img/projects/flowers-2.png",
-    "livePageLink": "https://vladaboiko.github.io/Flowers/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/VladaBoiko/Flowers",
-      "backend": ""
-    },
-    "role": "Completed the Hero & Hero Modal Form, Filter, Advantages, How It Works, Instagram, Guarantee, Return, Help sections, Register/Login forms and Personal Cabinet. Implemented client authorization. Scrum Master."
-  },
   {
     "id": 14,
     "name": "Contact Book",
@@ -208,8 +225,8 @@
       "Redux",
       "hooks",
       "React Router",
-      "axios",
-      "react-hook-form",
+      "Axios",
+      "React Hook Form",
       "Webpack",
       "Chakra UI"
     ],
@@ -228,9 +245,9 @@
     "description": "React App for providing resources, information, and support to pet owners.",
     "technologies": [
       "React",
-      "styled-components",
-      "react-hook-form",
-      "react-dropzone",
+      "Styled Components",
+      "React Hook Form",
+      "React Dropzone",
       "Yup",
       "React Query",
       "REST API",
@@ -273,20 +290,6 @@
     }
   },
   {
-    "id": 17,
-    "name": "Protective Face Masks",
-    "category": "html-css-js",
-    "description": "Adaptive Homepage based on the desktop Figma layout.",
-    "technologies": ["HTML", "SCSS", "JavaScript", "Gulp", "Webpack"],
-    "isTeamProject": false,
-    "image": "/img/projects/protective-masks.png",
-    "livePageLink": "https://veronika-chenko.github.io/gulp-mask-project/",
-    "repositoryLinks": {
-      "frontend": "https://github.com/Veronika-chenko/gulp-mask-project",
-      "backend": ""
-    }
-  },
-  {
     "id": 18,
     "name": "Contacts REST API",
     "category": "",
@@ -308,7 +311,7 @@
     "technologies": [
       "React",
       "TanStack Query/React Query",
-      "styled-components",
+      "Styled Components",
       "Nest",
       "MongoDB",
       "Swagger",

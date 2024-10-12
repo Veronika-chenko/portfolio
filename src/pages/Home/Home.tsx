@@ -23,7 +23,7 @@ export const Home = () => {
     getProjects();
   }, [filters]);
 
-  const handleTechButtonClick = (e: MouseEvent<HTMLElement>) => {
+  const handleCategoryButtonClick = (e: MouseEvent<HTMLElement>) => {
     const { name } = e.target as HTMLButtonElement;
     setTechCategory(name as TProjectTechCategory);
   };
@@ -32,7 +32,7 @@ export const Home = () => {
     <>
       <Hero />
       <Filters
-        handleTechButtonClick={handleTechButtonClick}
+        handleCategoryButtonClick={handleCategoryButtonClick}
         filters={filters as TFilters}
       />
       {projects && <Projects projects={projects} />}

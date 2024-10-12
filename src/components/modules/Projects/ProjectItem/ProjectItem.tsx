@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import { TProject } from '@types';
 import {
-  CardLink,
   ImageWrap,
   InfoWrap,
-  LinksWrap,
+  ProjectType,
   ProjectWrap,
   TechItem,
   TechList,
 } from './ProjectItem.styled';
-import { RepositoryLinks } from './RepositoryLinks';
+import { ProjectLinks } from './ProjectLinks';
 
 interface IProjectProps {
   project: TProject;
@@ -36,10 +35,12 @@ export const ProjectItem: FC<IProjectProps> = ({ project }) => {
 
       <InfoWrap>
         <h3>{name}</h3>
-        <p>{isTeamProject ? 'Team project' : 'Individual project'}</p>
+        <ProjectType $isTeamProject={isTeamProject}>
+          {isTeamProject ? 'Team project' : 'Individual project'}
+        </ProjectType>
+
         <TechList>
           {technologies.map((tech, idx) => (
-            // <TechItem key={idx} backgroundColor={createKeyWordForStyling(tech)}>
             <TechItem key={idx}>{tech}</TechItem>
           ))}
         </TechList>
@@ -55,15 +56,10 @@ export const ProjectItem: FC<IProjectProps> = ({ project }) => {
             {role}
           </p>
         )}
-        <LinksWrap>
-          <p>
-            <b>Links:</b>
-          </p>
-          {livePageLink.length > 0 && (
-            <CardLink href={livePageLink}>Live page</CardLink>
-          )}
-          <RepositoryLinks repositoryLinks={repositoryLinks} />
-        </LinksWrap>
+        <ProjectLinks
+          livePageLink={livePageLink}
+          repositoryLinks={repositoryLinks}
+        />
       </InfoWrap>
     </ProjectWrap>
   );

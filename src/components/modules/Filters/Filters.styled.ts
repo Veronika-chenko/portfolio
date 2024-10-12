@@ -15,8 +15,9 @@ export const Section = styled.section`
   }
 `;
 
-export const TechList = styled.ul`
+export const CategoryList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 `;
