@@ -15,8 +15,9 @@ export const Home = () => {
         setProjects(projectList);
         return;
       }
-      const filteredList = projectList.filter(
-        (project: TProject) => project.category === filters.techCategory
+
+      const filteredList = projectList.filter((project: TProject) =>
+        project.category.includes(filters.techCategory)
       );
       setProjects(filteredList);
     };

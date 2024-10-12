@@ -1,9 +1,16 @@
-@import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@700&family=Manrope:wght@400;500;700&display=swap');
+@import-normalize;
 
-/* html {
+:root {
+  --light-title: #e2e8f0;
+  --text: #94a3b8;
+  --dark-text: rgb(15, 23, 42);
 
-} */
+  --accent-text: #5eead4;
+  --button-bg: #2dd4bf1a;
+
+  --transition: 250ms linear;
+}
 
 * {
   box-sizing: border-box;
@@ -12,14 +19,14 @@
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
   line-height: 1.375;
 
+  color: var(--dark-text);
   background-color: #f7fdfb;
-  color: var(--black-text);
 }
 
 a {

@@ -8,7 +8,7 @@ export type TRepositoryLinks = {
 export type TProject = {
   id: number;
   name: string;
-  category: TProjectTechCategory;
+  category: TProjectTechCategory[];
   description: string;
   technologies: string[];
   isTeamProject: boolean;

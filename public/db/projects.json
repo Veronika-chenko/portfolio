@@ -1,8 +1,8 @@
 [
   {
-    "id": 9,
+    "id": 1,
     "name": "WebStudio",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "Two-page adaptive website. Interactive JavaScript: Mobile Menu, Modal Form, Projects filtering on the Portfolio page.",
     "technologies": ["HTML", "SCSS", "JavaScript"],
     "isTeamProject": false,
@@ -15,9 +15,9 @@
     }
   },
   {
-    "id": 10,
+    "id": 2,
     "name": "BarberShop",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "Adaptive landing page. Interactive JavaScript: Hero Slider, Mobile Menu, Smooth scrolling.",
     "technologies": ["HTML", "SCSS", "JavaScript"],
     "isTeamProject": false,
@@ -29,10 +29,10 @@
     }
   },
   {
-    "id": 17,
+    "id": 3,
     "name": "Protective Face Masks",
-    "category": "html-css-js",
-    "description": "Adaptive Homepage based on the desktop Figma layout.",
+    "category": ["html-css-js"],
+    "description": "Adaptive Homepage based on the desktop Figma layout. Interactive JavaScript: Mobile Menu, Reviews Slider.",
     "technologies": ["HTML", "SCSS", "JavaScript", "Gulp", "Webpack"],
     "isTeamProject": false,
     "image": "/img/projects/protective-masks.png",
@@ -43,9 +43,9 @@
     }
   },
   {
-    "id": 8,
+    "id": 4,
     "name": "Filmoteka",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "Project for searching and adding favorite movies to a client's personal library.",
     "technologies": ["HTML", "SCSS", "JavaScript", "Parcel"],
     "isTeamProject": true,
@@ -58,9 +58,9 @@
     "role": "Implemented pagination and movie collection display. Refactored header styles due to the addition of new features."
   },
   {
-    "id": 13,
+    "id": 5,
     "name": "Flower Shop",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "A multiple-page adaptive Flower Shop website.",
     "technologies": ["HTML", "SCSS", "JavaScript", "Axios", "Parcel", "Scrum"],
     "isTeamProject": true,
@@ -74,9 +74,9 @@
   },
 
   {
-    "id": 11,
+    "id": 6,
     "name": "Digital Project «Home»",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "Adaptive webpage based on the desktop Figma layout. Interactive JavaScript: Mobile Menu, Hero Slider, Scroll Animation.",
     "technologies": ["HTML", "SCSS", "JavaScript"],
     "isTeamProject": false,
@@ -88,10 +88,10 @@
     }
   },
   {
-    "id": 12,
+    "id": 7,
     "name": "Psycology",
     "description": "",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "technologies": ["HTML", "CSS", "SCSS", "Parcel"],
     "isTeamProject": true,
     "image": "/img/projects/psycology.png",
@@ -102,32 +102,30 @@
     },
     "role": "Completed Seminars Page. Scrum Master."
   },
-
   {
-    "id": 1,
+    "id": 8,
     "name": "Image Finder",
-    "category": "react",
+    "category": ["react"],
     "description": "The Image Finder App for searching images based on keywords. Load More implemented.",
     "technologies": [
       "React",
-      "React Hooks",
+      "Hooks",
       "TypeScript",
       "Styled Components",
       "Axios"
     ],
     "isTeamProject": false,
-    "image": "/img/projects/image-finder-3.png",
+    "image": "/img/projects/image-finder.png",
     "livePageLink": "https://veronika-chenko.github.io/image-search/",
     "repositoryLinks": {
       "frontend": "https://github.com/Veronika-chenko/image-search",
       "backend": ""
     }
   },
-
   {
-    "id": 2,
+    "id": 9,
     "name": "Coffee Feedback Widget",
-    "category": "react",
+    "category": ["react"],
     "description": "An application to collect statistics. Reset & Restore Options implemented.",
     "technologies": [
       "React",
@@ -144,11 +142,11 @@
     }
   },
   {
-    "id": 3,
+    "id": 10,
     "name": "User Cards",
-    "category": "react",
+    "category": ["react"],
     "description": "This project features user cards with an interactive Follow button and dynamic follower count. The button's state and follower count are retained upon page refresh.",
-    "technologies": ["React", "React Custom Hooks", "Styled Components"],
+    "technologies": ["React", "Custom Hooks", "Styled Components"],
     "isTeamProject": false,
     "image": "/img/projects/user-cards.png",
     "livePageLink": "https://veronika-chenko.github.io/user-cards-test/",
@@ -158,9 +156,9 @@
     }
   },
   {
-    "id": 4,
+    "id": 11,
     "name": "2048",
-    "category": "html-css-js",
+    "category": ["html-css-js"],
     "description": "The game logic handles tile movement, merging, and score updates, all encapsulated within classes for clean, modular code.",
     "technologies": ["HTML", "CSS", "JavaScript", "OOP"],
     "isTeamProject": false,
@@ -172,11 +170,11 @@
     }
   },
   {
-    "id": 5,
+    "id": 12,
     "name": "Memory Game",
-    "category": "react",
+    "category": ["react"],
     "description": "Three themes implemented: Coffee, Flowers, Music. The app fetches data from the local db folder based on the current theme.",
-    "technologies": ["React", "React Hooks", "Styled Components"],
+    "technologies": ["React", "Custom Hooks", "Styled Components"],
     "isTeamProject": false,
     "image": "/img/projects/memory-coffee.png",
     "livePageLink": "https://veronika-chenko.github.io/memory-game-react-app/",
@@ -186,9 +184,9 @@
     }
   },
   {
-    "id": 6,
+    "id": 13,
     "name": "Random Quote Generator",
-    "category": "react",
+    "category": ["react"],
     "description": "The Random Quote Generator provides a random quote on request.",
     "technologies": ["React", "Styled Components", "Axios"],
     "isTeamProject": false,
@@ -200,10 +198,10 @@
     }
   },
   {
-    "id": 7,
+    "id": 14,
     "name": "Ice-Cream",
-    "category": "html-css-js",
-    "description": "Colorful adaptive landing page",
+    "category": ["html-css-js"],
+    "description": "Colorful adaptive landing page.",
     "technologies": ["HTML", "SCSS", "JavaScript", "Parcel", "Scrum", "Trello"],
     "isTeamProject": true,
     "image": "/img/projects/ice-cream-6.png",
@@ -214,16 +212,30 @@
     },
     "role": "Completed Products Section. Scrum Master."
   },
-
   {
-    "id": 14,
-    "name": "Contact Book",
+    "id": 15,
+    "name": "Bakery",
+    "category": "react",
+    "description": "Adaptive Bakery Website",
+    "technologies": ["Next", "Tailwind CSS", "TypeScript"],
+    "isTeamProject": false,
+    "image": "/img/projects/patissier.png",
+    "livePageLink": "https://patissier-next-app.vercel.app/",
+    "repositoryLinks": {
+      "frontend": "https://github.com/Veronika-chenko/patissier-next-app",
+      "backend": ""
+    },
+    "role": ""
+  },
+  {
+    "id": 16,
+    "name": ["Contact Book"],
     "category": "react",
     "description": "A simple adaptive contact book connected to backend API. Users can register, log in, add, edit, remove or filter contacts, log out.",
     "technologies": [
       "React",
       "Redux",
-      "hooks",
+      "Hooks",
       "React Router",
       "Axios",
       "React Hook Form",
@@ -239,9 +251,9 @@
     }
   },
   {
-    "id": 15,
+    "id": 17,
     "name": "Petly",
-    "category": "fullstack",
+    "category": ["react", "fullstack"],
     "description": "React App for providing resources, information, and support to pet owners.",
     "technologies": [
       "React",
@@ -266,19 +278,18 @@
     "role": "Client-side: Implemented post creation, post and comment deletion. Styled Posts and PostDetails pages (Private Route). Server-side: Completed News, Friends, Pets and Blog backend modules with their Swagger documentation."
   },
   {
-    "id": 16,
+    "id": 18,
     "name": "Movie Recommendations",
-    "category": "fullstack",
+    "category": ["react", "fullstack"],
     "description": "Adaptive React application that allows users: to search for movies using different queries, view movie details in a modal window, watch movie trailers, create a list of favorite movies, and share it via social media.",
     "technologies": [
       "React",
       "Hooks",
       "GraphQL",
-      "Apollo Client",
+      "Apollo",
       "Material-UI",
-      "React-intl",
+      "React Intl",
       "Express",
-      "Apollo Server 4",
       "Date-fns"
     ],
     "isTeamProject": false,
@@ -290,7 +301,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Contacts REST API",
     "category": "",
     "description": "REST API for Contact Management. The API includes two routes: one for authentication and one for managing contacts.",
@@ -304,14 +315,12 @@
     }
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Patissier",
-    "category": "fullstack",
+    "category": ["react", "fullstack"],
     "description": "",
     "technologies": [
       "React",
-      "TanStack Query/React Query",
-      "Styled Components",
       "Nest",
       "MongoDB",
       "Swagger",
@@ -319,12 +328,12 @@
       "REST API"
     ],
     "isTeamProject": true,
-    "image": "/img/projects/patissier.png",
-    "livePageLink": "https://byht1.github.io/patissier-client/",
+    "image": "/img/projects/patissier-server.png",
+    "livePageLink": "",
     "repositoryLinks": {
-      "frontend": "https://github.com/byht1/patissier-client",
+      "frontend": "",
       "backend": "https://github.com/byht1/patissier-server"
     },
-    "role": "Completed Courses and Groups server modules. Completed CourseDetails Page."
+    "role": "Completed Courses and Groups server modules. Completed Course Details Page."
   }
 ]

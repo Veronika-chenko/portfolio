@@ -13,6 +13,9 @@ export const HeroTitle = styled.h1`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+
+  font-family: Inter, sans-serif;
+  font-weight: 700;
   ${devices.tablet} {
     width: 295px;
   }

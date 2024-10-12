@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
-import { TProjectTechCategory, TProjectType } from '@types';
+import { TFilters, TProjectTechCategory, TProjectType } from '@types';
 
-const initialFilterState = {
+const initialFilterState: TFilters = {
   techCategory: 'all',
   type: 'all',
 };

@@ -10,10 +10,16 @@ export const ProjectWrap = styled.li`
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 10px #0000000d;
+
   ${devices.tablet} {
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: transform var(--transition);
+
+    &:hover {
+      transform: translateY(-12px);
+    }
   }
 `;
 
@@ -40,12 +46,7 @@ export const InfoWrap = styled.div`
 `;
 
 export const ProjectType = styled.p<ProjectTypeProps>`
-  color: ${p => (p.$isTeamProject ? 'red' : 'inherit')};
-`;
-
-export const LinksWrap = styled.div`
-  display: flex;
-  gap: 12px;
+  color: ${p => (p.$isTeamProject ? '#FF5733' : 'inherit')};
 `;
 
 export const TechList = styled.ul`
@@ -61,11 +62,4 @@ export const TechItem = styled.li`
   background-color: #b5b7c2;
   color: #ffffff;
   box-shadow: 1px 2px 2px grey;
-  cursor: pointer;
-
-  transition: background-color 250ms linear;
-
-  &:hover {
-    background-color: '#b5b7c2';
-  }
 `;
