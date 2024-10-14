@@ -16,7 +16,6 @@ interface IProjectProps {
 
 export const ProjectItem: FC<IProjectProps> = ({ project }) => {
   const {
-    // id,
     name,
     description,
     technologies,
@@ -30,7 +29,7 @@ export const ProjectItem: FC<IProjectProps> = ({ project }) => {
   return (
     <ProjectWrap>
       <ImageWrap>
-        <img src={image} alt={name} />
+        <img src={image} alt={name} loading="lazy" />
       </ImageWrap>
 
       <InfoWrap>

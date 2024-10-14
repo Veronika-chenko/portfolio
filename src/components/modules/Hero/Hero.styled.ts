@@ -14,16 +14,33 @@ export const HeroTitle = styled.h1`
   flex-direction: column;
   margin-bottom: 30px;
 
-  font-family: Inter, sans-serif;
+  font-size: 32px;
   font-weight: 700;
   ${devices.tablet} {
-    width: 295px;
+    width: 395px;
   }
 
   span {
     color: #1b5fc1;
     ${devices.tablet} {
-      align-self: flex-end;
+      padding-left: 68px;
     }
+  }
+`;
+
+export const HeroTextWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  ${devices.tablet} {
+    max-width: 59%;
+  }
+  ${devices.desktop} {
+    max-width: 50%;
+  }
+
+  p {
+    font-size: 18px;
   }
 `;

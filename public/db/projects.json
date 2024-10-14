@@ -70,7 +70,7 @@
       "frontend": "https://github.com/VladaBoiko/Flowers",
       "backend": ""
     },
-    "role": "Completed the Hero Slider & Hero Modal Form, Filter, Advantages, How It Works, Instagram, Guarantee, Return, Help sections, Register/Login forms and Personal Cabinet. Implemented client authorization. Scrum Master."
+    "role": "Completed 10 different layout blocks: Hero Slider & Hero Modal Form, Filter, Advantages, How It Works, Instagram, Guarantee, Return, Help sections, Register/Login forms and Personal Cabinet. Implemented client authorization. Scrum Master."
   },
 
   {
@@ -92,7 +92,7 @@
     "name": "Psycology",
     "description": "",
     "category": ["html-css-js"],
-    "technologies": ["HTML", "CSS", "SCSS", "Parcel"],
+    "technologies": ["HTML", "CSS", "SCSS", "Parcel", "Scrum"],
     "isTeamProject": true,
     "image": "/img/projects/psycology.png",
     "livePageLink": "https://vladaboiko.github.io/Psychology/",
@@ -134,7 +134,7 @@
       "Custom Hooks"
     ],
     "isTeamProject": false,
-    "image": "/img/projects/feedback.png",
+    "image": "/img/projects/feedback-2.png",
     "livePageLink": "https://veronika-chenko.github.io/goit-react-hw-04-feedback/",
     "repositoryLinks": {
       "frontend": "https://github.com/Veronika-chenko/goit-react-hw-04-feedback",
@@ -176,7 +176,7 @@
     "description": "Three themes implemented: Coffee, Flowers, Music. The app fetches data from the local db folder based on the current theme.",
     "technologies": ["React", "Custom Hooks", "Styled Components"],
     "isTeamProject": false,
-    "image": "/img/projects/memory-coffee.png",
+    "image": "/img/projects/memory-coffee-2.png",
     "livePageLink": "https://veronika-chenko.github.io/memory-game-react-app/",
     "repositoryLinks": {
       "frontend": "https://github.com/Veronika-chenko/memory-game-react-app",
@@ -216,7 +216,7 @@
     "id": 15,
     "name": "Bakery",
     "category": "react",
-    "description": "Adaptive Bakery Website",
+    "description": "Adaptive Bakery Website.",
     "technologies": ["Next", "Tailwind CSS", "TypeScript"],
     "isTeamProject": false,
     "image": "/img/projects/patissier.png",
@@ -237,13 +237,14 @@
       "Redux",
       "Hooks",
       "React Router",
-      "Axios",
       "React Hook Form",
+      "Axios",
+      "REST API",
       "Webpack",
       "Chakra UI"
     ],
     "isTeamProject": false,
-    "image": "/img/projects/contact-book-5.png",
+    "image": "/img/projects/contact-book.png",
     "livePageLink": "https://veronika-chenko.github.io/phonebook-react-app/",
     "repositoryLinks": {
       "frontend": "https://github.com/Veronika-chenko/phonebook-react-app",
@@ -334,6 +335,6 @@
       "frontend": "",
       "backend": "https://github.com/byht1/patissier-server"
     },
-    "role": "Completed Courses and Groups server modules. Completed Course Details Page."
+    "role": "Completed Courses and Groups server modules. Completed Course Details Page on the frontend."
   }
 ]

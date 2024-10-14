@@ -1,3 +1,4 @@
 export * from './Hero';
 export * from './Projects';
-export * from './Filters';
+export * from './Projects/Filters';
+export * from './Advantages';

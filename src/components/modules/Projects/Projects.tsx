@@ -1,23 +1,45 @@
-import { Container } from '../../globals';
-import { ProjectSection, ProjectList } from './Projects.styled';
-import { ProjectItem } from './ProjectItem';
-import { FC } from 'react';
-import { TProject } from '@types';
+import { MouseEvent, useEffect, useState } from 'react';
+import { fetchProjects } from '@api/fetchProjects';
+import { TFilters, TProject, TProjectTechCategory } from '@types';
+import { useFilters } from '@hooks';
+import { Container, Section, SectionTitle } from '@components/globals';
+import { ProjectList } from './ProjectList';
+import { Filters } from './Filters';
 
-interface IProjectProps {
-  projects: TProject[];
-}
+export const Projects = () => {
+  const { filters, setTechCategory } = useFilters();
+  const [projects, setProjects] = useState<TProject[]>();
 
-export const Projects: FC<IProjectProps> = ({ projects }) => {
+  useEffect(() => {
+    const getProjects = async () => {
+      const projectList = await fetchProjects();
+      if (filters.techCategory === 'all') {
+        setProjects(projectList);
+        return;
+      }
+
+      const filteredList = projectList.filter((project: TProject) =>
+        project.category.includes(filters.techCategory)
+      );
+      setProjects(filteredList);
+    };
+    getProjects();
+  }, [filters]);
+
+  const handleCategoryButtonClick = (e: MouseEvent<HTMLElement>) => {
+    const { name } = e.target as HTMLButtonElement;
+    setTechCategory(name as TProjectTechCategory);
+  };
   return (
-    <ProjectSection>
+    <Section>
       <Container>
-        <ProjectList>
-          {projects?.map(project => (
-            <ProjectItem key={project.id} project={project} />
-          ))}
-        </ProjectList>
+        <SectionTitle title="Projects" />
+        <Filters
+          handleCategoryButtonClick={handleCategoryButtonClick}
+          filters={filters as TFilters}
+        />
+        <ProjectList projects={projects as TProject[]} />
       </Container>
-    </ProjectSection>
+    </Section>
   );
 };

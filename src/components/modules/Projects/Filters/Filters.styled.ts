@@ -1,25 +1,13 @@
 import styled from 'styled-components';
 import { TProjectTechCategory } from '@types';
 
-export const Section = styled.section`
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  & > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    gap: 30px;
-  }
-`;
-
 export const CategoryList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+
+  margin-bottom: 60px;
 `;
 
 interface ButtonProps {
@@ -40,10 +28,11 @@ export const TechButton = styled.button<ButtonProps>`
   font-weight: 600;
   width: max-content;
 
-  transition: background-color 250ms linear;
+  transition: background-color var(--transition), box-shadow var(--transition);
 
   &:hover,
   &:active {
+    box-shadow: 0px 1px 1px grey;
     background-color: '#b5b7c2';
   }
 `;

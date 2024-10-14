@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { devices } from '../../../globals';
+import { devices } from '@components/globals';
 
 interface ProjectTypeProps {
   $isTeamProject: boolean;
@@ -37,12 +37,13 @@ export const ImageWrap = styled.div`
 `;
 
 export const InfoWrap = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 8px;
-  /* background-color: #fff; */
   flex-grow: 1;
+  gap: 4px;
+
+  padding: 8px;
 `;
 
 export const ProjectType = styled.p<ProjectTypeProps>`
