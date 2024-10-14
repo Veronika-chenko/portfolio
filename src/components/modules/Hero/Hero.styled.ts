@@ -7,6 +7,10 @@ export const HeroSection = styled.section`
   ${devices.desktop} {
     padding-top: 60px;
   }
+
+  & > div {
+    position: relative;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -42,5 +46,25 @@ export const HeroTextWrap = styled.div`
 
   p {
     font-size: 18px;
+  }
+`;
+
+//////////////
+
+export const SocialsBox = styled.div`
+  ${devices.tablet} {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 24px;
+
+    ${devices.tablet} {
+      flex-direction: column;
+    }
   }
 `;

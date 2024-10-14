@@ -1,12 +1,39 @@
-import { Container } from '../../globals';
-import { HeroSection, HeroTextWrap, HeroTitle } from './Hero.styled';
+import { Container, SocialLink } from '@components/globals';
+import {
+  HeroSection,
+  HeroTextWrap,
+  HeroTitle,
+  SocialsBox,
+} from './Hero.styled';
+import GitHubIcon from '@assets/github.svg?react';
+import Linkedin from '@assets/linkedin.svg?react';
+import { ReactNode } from 'react';
+
+interface ISocialLink {
+  name: string;
+  href: string;
+  iconComponent: ReactNode;
+}
+
+const socialLinks: ISocialLink[] = [
+  {
+    name: 'github',
+    href: 'https://github.com/Veronika-chenko',
+    iconComponent: <GitHubIcon />,
+  },
+  {
+    name: 'linkedin',
+    href: 'https://www.linkedin.com/in/veronika-kravchenko-b02764251/',
+    iconComponent: <Linkedin />,
+  },
+];
 
 export const Hero = () => {
   return (
     <HeroSection>
       <Container>
         <HeroTitle>
-          Full Stack Developer <span>Veronika Kravchenko</span>
+          Full-Stack Developer <span>Veronika Kravchenko</span>
         </HeroTitle>
         <HeroTextWrap>
           <p>Welcome to my Portfolio Page!</p>
@@ -23,6 +50,15 @@ export const Hero = () => {
             Experienced in both client-side and <br /> server-side development.
           </p>
         </HeroTextWrap>
+        <SocialsBox>
+          <ul>
+            {socialLinks.map(({ name, href, iconComponent }) => (
+              <li key={name}>
+                <SocialLink href={href}>{iconComponent}</SocialLink>
+              </li>
+            ))}
+          </ul>
+        </SocialsBox>
       </Container>
     </HeroSection>
   );

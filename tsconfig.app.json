@@ -18,7 +18,8 @@
       "@types": ["src/types"],
       "@hooks": ["src/hooks"],
       "@components/*": ["src/components/*"],
-      "@api/*": ["src/api/*"]
+      "@api/*": ["src/api/*"],
+      "@assets": ["src/assets"]
     },
 
     /* Linting */
@@ -27,5 +28,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "declarations.d.ts"]
 }

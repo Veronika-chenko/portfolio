@@ -18,7 +18,7 @@ export const ProjectWrap = styled.li`
     transition: transform var(--transition);
 
     &:hover {
-      transform: translateY(-12px);
+      transform: translateY(-8px);
     }
   }
 `;
@@ -43,7 +43,7 @@ export const InfoWrap = styled.div`
   flex-grow: 1;
   gap: 4px;
 
-  padding: 8px;
+  padding: 8px 8px 10px;
 `;
 
 export const ProjectType = styled.p<ProjectTypeProps>`

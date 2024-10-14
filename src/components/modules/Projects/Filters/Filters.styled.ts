@@ -30,9 +30,11 @@ export const TechButton = styled.button<ButtonProps>`
 
   transition: background-color var(--transition), box-shadow var(--transition);
 
-  &:hover,
-  &:active {
+  &:hover {
     box-shadow: 0px 1px 1px grey;
+  }
+
+  &:active {
     background-color: '#b5b7c2';
   }
 `;
