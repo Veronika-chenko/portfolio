@@ -267,7 +267,8 @@
       "TypeScript",
       "NestJS",
       "MongoDB",
-      "Swagger"
+      "Swagger",
+      "Database Design"
     ],
     "isTeamProject": true,
     "image": "/img/projects/petly.png",
@@ -276,7 +277,7 @@
       "frontend": "https://github.com/byht1/react-team-project",
       "backend": "https://github.com/byht1/node-team-project"
     },
-    "role": "Client-side: Implemented post creation, post and comment deletion. Styled Posts and PostDetails pages (Private Route). Server-side: Completed News, Friends, Pets and Blog backend modules with their Swagger documentation."
+    "role": "Client-side: Implemented post creation, post and comment deletion. Styled Posts and PostDetails pages (Private Route). Server-side: Completed News, Friends, Pets and Blog backend modules with their Swagger documentation, including Database Design for the Blog module."
   },
   {
     "id": 18,
@@ -326,7 +327,8 @@
       "MongoDB",
       "Swagger",
       "TypeScript",
-      "REST API"
+      "REST API",
+      "Database Design"
     ],
     "isTeamProject": true,
     "image": "/img/projects/patissier-server.png",
@@ -335,6 +337,6 @@
       "frontend": "",
       "backend": "https://github.com/byht1/patissier-server"
     },
-    "role": "Completed Courses and Groups server modules. Completed Course Details Page on the frontend."
+    "role": "Completed Courses and Groups server modules, including Database Design. Completed Course Details Page on the frontend."
   }
 ]
