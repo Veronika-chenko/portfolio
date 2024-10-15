@@ -1,5 +1,6 @@
 import { Container, Section, SectionTitle } from '../../globals';
 import { AdvantageItem, AdvantageList, ImageWrap } from './Advantages.styled';
+import { PUBLIC_URL } from '@constants';
 
 interface IAdvantages {
   title: string;
@@ -27,7 +28,7 @@ export const Advantages = () => {
           {advantages.map(({ title, imgUrl }, idx) => (
             <AdvantageItem key={idx}>
               <ImageWrap>
-                <img src={imgUrl} alt="advantage" />
+                <img src={`${PUBLIC_URL}${imgUrl}`} alt="advantage" />
               </ImageWrap>
               <h3>{title}</h3>
             </AdvantageItem>

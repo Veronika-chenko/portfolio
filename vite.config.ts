@@ -12,8 +12,9 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
       '@api': path.resolve(__dirname, './src/api'),
       '@assets': path.resolve(__dirname, './src/assets'),
+      '@constants': path.resolve(__dirname, './src/constants.ts'),
     },
   },
   plugins: [react(), svgr()],
-  base: '/portfolio/',
+  base: '/portfolio/', // test
 });

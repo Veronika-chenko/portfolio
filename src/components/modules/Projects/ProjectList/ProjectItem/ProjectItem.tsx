@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { TProject } from '@types';
+import { PUBLIC_URL } from '@constants';
 import {
   ImageWrap,
   InfoWrap,
@@ -29,7 +30,7 @@ export const ProjectItem: FC<IProjectProps> = ({ project }) => {
   return (
     <ProjectWrap>
       <ImageWrap>
-        <img src={image} alt={name} loading="lazy" />
+        <img src={`${PUBLIC_URL}${image}`} alt={name} loading="lazy" />
       </ImageWrap>
 
       <InfoWrap>
